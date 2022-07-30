@@ -24,14 +24,16 @@ if userInput == "OK":
     pyautogui.moveTo(screenWidth / 2, screenHeight / 2)
     botRunning = True
     botToggle = True
-    FPS = 30
+    FPS = 0
     targetR = 255
     targetG = 255
     targetB = 255
-    screenShotRegion = (350, 123, 1200, 900)
+    screenShotRegion = (394, 192, 1155, 826)
     imgResearchStep = 5
-    # (x=350, y=123)
-    # (x=1551, y=1023)
+    # (x=394, y=192)
+    # (x=1549, y=1018)
+
+    # screenshot demo : pyautogui.screenshot("screenshot.png", region=screenShotRegion)
 
     # main loop
     while botRunning:
@@ -41,14 +43,12 @@ if userInput == "OK":
             imgX = 0
             imgY = 0
             while imgY < screenShotRegion[3]:
-                if img.getpixel((imgX, imgY))[0] == (targetR, targetG, targetB):
+                if img.getpixel((imgX, imgY))[0] == targetR:
                     pyautogui.moveTo(screenShotRegion[0] + imgX, screenShotRegion[1] + imgY)
-                    print("Loop broken")
                     break
                 else:
                     imgX += imgResearchStep
                     if imgX > screenShotRegion[2]-1:
-                        # print("imgX reset / imgY updated")
                         imgX = 0
                         imgY += imgResearchStep
                 # print((imgX, imgY))
