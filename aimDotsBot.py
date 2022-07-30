@@ -10,13 +10,12 @@ import pyautogui
 
 time.sleep(1)
 userInput = pyautogui.confirm(
-    "Welcome to illuminatiClickerBot, a bot made for ILLUMINATI CLICKER© v1.19 by Nickro_01\nFollow the procedure :"
-    "\n1. Visit this link : https://scratch.mit.edu/projects/493520075/"
+    "Welcome to aimDotsBot, a bot made for Aim Dots© v1.19 by SoloOne\nFollow the procedure :"
+    "\n1. Visit this link : https://scratch.mit.edu/projects/285825495/"
     "\n2. Put the project in fullscreen"
     "\n3. Launch the project by clicking on the green flag"
     "\n4. Press 'OK' to run the script"
-    "\n5. Place your mouse on the illuminati triangle"
-    "\nThe bot click automatically. Press 'alt' button to pause/launch the process, press 'space' to stop the process...")
+    "\nThe bot plays independently. Press 'alt' button to pause/launch the process, press 'space' to stop the process...")
 
 if userInput == "OK":
     # variables
