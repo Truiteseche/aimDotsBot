@@ -19,6 +19,7 @@ userInput = pyautogui.confirm(
 
 if userInput == "OK":
     # variables
+    pyautogui.PAUSE = 0
     screenWidth, screenHeight = pyautogui.size()
     pyautogui.moveTo(screenWidth / 2, screenHeight / 2)
     botRunning = True
